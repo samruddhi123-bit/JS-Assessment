@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click button</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #countDisplay {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="incrementCounter()">Click Me</button>
+  <p id="countDisplay">You clicked 0 times</p>
+
+  <script>
+    let count = 0;
+
+    function incrementCounter() {
+      count++;
+      document.getElementById("countDisplay").textContent = `You clicked ${count} times`;
+    }
+  </script>
+
+</body>
+</html>
